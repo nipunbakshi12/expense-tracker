@@ -141,3 +141,63 @@ hr {
   color: wheat;
   width: 90%;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .chart-container,
+  .expense-tracker {
+    flex: 1;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+  .chart-container canvas {
+    max-width: 300px; /* Limit chart width */
+    height: auto;
+    margin: 0 auto; /* Center the chart */
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header,
+  .footer {
+    font-size: 14px;
+    padding: 4px 0;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  select,
+  input[type="number"],
+  input[type="date"] {
+    padding: 6px;
+  }
+
+  .chart-container canvas {
+    max-width: 200px; /* Further reduce chart size */
+    height: auto;
+    margin: 0 auto; /* Center the chart */
+  }
+}
